@@ -47,7 +47,8 @@
     {
         font-size: 16px;
         text-align: center;
-        width: 50%;
+        /* width: 100px; */
+        width: 90%;
         color: hsl(224, 23%, 55%);
         /* margin-left: 50%; */
         /* transform: translate(-50%,10%); */
@@ -83,9 +84,10 @@
     }
     .sub-card p
     {
-        width: 50%;
+        width: fit-content;
         height: fit-content;
-        
+        display: flex;
+        flex-direction: row;        
     }
     .sub-card
     {
@@ -102,7 +104,7 @@
     }
     .card a
     {
-        width: 100px;
+        width: fit-content;
         height: fit-content;
         /* position: relative; */
         /* top:40% */
@@ -150,10 +152,10 @@
     }
     .cancel-button:hover{cursor: pointer;color: hsl(223, 47%, 23%);}
     button:hover{cursor: pointer;background-color: hsl(245, 68%, 75%);;}
-    @media only screen and (max-width:410px)
+    @media only screen and (max-width:580px)
     {
         body{background-image: url('./images/pattern-background-mobile.svg');}
         .container{width: 80%;}
         .card{width:90%}
-        .sub-card{width: 100%;}
+        .sub-card{width: fit-content;}
     }
